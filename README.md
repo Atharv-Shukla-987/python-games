@@ -1,22 +1,15 @@
-# 🐍 Modern Snake Game
-
-A classic arcade-style Snake game built with a clean, modern UI and realistic gameplay elements. This project features dynamic difficulty, high-score tracking, and immersive sound effects—all running on pure web technologies.
+#  a simple web game
+A Simple Arcade game , which you may have already seen or played on old keypad mobile .
 https://python-games-two.vercel.app/
 # ✨ Features
+  it uses a realistic prey like mice (🐭), frogs (🐸), and crickets (🦗) instead of orbs like circle .
+    A background fun music which will keep u intracted ,  a crunch sound when it eats the prey
+    and a death effect
 
-     Realistic Prey System: Instead of generic blocks, the snake hunts for real prey like mice (🐭), frogs (🐸), and crickets (🦗).
-
-    Immersive Audio: -   Background music that starts with the game.
-
-     Satisfying "crunch" sounds when eating.
-
-        Unique death sound effect upon collision.
-
-   Dynamic Difficulty: The game speed increases as you eat, challenging your reflexes as the snake grows longer.
-
-   Head Rotation: The snake's head visually rotates to face the direction of movement (Up, Down, Left, Right).
-
-    High Score Tracking: Your best performance is saved locally so you can always try to beat your record.
+    snake increases its speed , the more u eat the more ur snakes speed
+ # FACTS
+ The snake's head visually rotates IN FACING DIRECTION
+  It also consist of a high score tracking which keeps track of  your high so you feel competitive and do not lose attention
 
    Retro Design: A stylized game board with "glassmorphism" borders and a neon-inspired interface.
 
