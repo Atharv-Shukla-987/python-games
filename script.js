@@ -2,7 +2,6 @@ const Board = document.getElementById('game-board');
 const instructionText = document.getElementById('instruction-text');
 const logo = document.getElementById('logo');
 
-// FIXED: IDs now match your HTML exactly
 const scoreElement = document.getElementById('score');
 const highScoreElement = document.getElementById('highscore');
 
@@ -140,7 +139,7 @@ function checkCollision() {
 }
 
 function resetGame() {
-  // If we already stopped, don't play death sound again
+  
   if (!gameStarted) return; 
 
   updateHighScore();
