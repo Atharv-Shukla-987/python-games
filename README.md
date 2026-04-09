@@ -45,10 +45,19 @@ CSS3: Custom styling, animations, and head rotation logic.
 # 📁 Project Structure
 Plaintext
 
-├── index.html       # Game structure and audio elements
-├── style.css        # Visual styles and snake textures
-├── script.js       # Game logic and sound triggers
-└── assets/          # Audio files and sprites
+snake-game/
+├── index.html          # Main entry point (HTML)
+├── style.css           # All game styling and animations
+├── script.js           # Core game logic and engine
+├── assets/             # Folder for all external files
+│   ├── images/         # Snake sprites and food icons
+│   │   ├── logo.png
+│   │   └── carrot_sprite.png
+│   └── sounds/         # MP3/WAV audio files
+│       ├── bg-music.mp3
+│       ├── eat.mp3
+│       └── death.mp3
+└── README.md           # Project documentation
 
 # 🚀 Installation & Local Development
 
