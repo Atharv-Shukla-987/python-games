@@ -1,89 +1,164 @@
-body{display:flex;
-    align-items:center;
+body {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    height:100vh;
-    margin:0;
+    height: 100vh;
+    margin: 0;
     font-family: "VT323", monospace;
-
 }
 
-body,.snake{
-    background-color:#414141;
-}
-
-
-
-#game-board{
-    border-radius:100px;
-    display: grid;
-    grid-template-columns:repeat(20,20px);
-    grid-template-rows:repeat(20,20px);
-    margin:5px;
-
-
-}
-
-.game-border-1{
-    border: #070804 solid 10px;
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px #000000;
+body, .snake {
+    background-color:#6c8392;
     
 }
 
+#colorsel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    
+    background: #000;
+}
 
+#btn {
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
 
-.game-border-2{
-    border: #615a24 solid 8px;
+#game-board {
+    border-radius: 100px;
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    margin: 5px;
+}
+
+.game-border-1 {
+    border: #070804 solid 10px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.game-border-2 {
+    border:  	#000000 solid 8px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px #aba78a;
 }   
 
-
-
-.game-border-3{
-    border: #8b966c solid 30px;
+.game-border-3 {
+    border:  	#2e4242 solid 30px;
     border-radius: 20px;
     box-shadow: 0px 0px 5px #8b966c;
-
 }
-#instruction-text{
+
+#instruction-text {
     position: absolute;
-    top:60%;
-    color: #333;
+    top: 60%;
+    color:#6c8392;
     width: 300px;
     text-align: center;
     text-transform: capitalize;
     padding: 30px;
-    margin: 0;}
-.scores{
+    margin: 0;
+}
+
+.scores {
     display: flex;
     justify-content: space-between;
 }
-#score{color: #abb78a;
+
+#score {
+    color:  	#000000;
 }
 
-#score,#high-score{
+/* Fixed from #high-score to #highscore */
+#score, #highscore {
     font-size: 40px;
     font-weight: bolder;
     margin: 10px 0;
 }
 
-#highscore{
-    color: #8b966c;
-    display: none
-}
-.game-border-3,#logo{
-    background-color: #c4cfa3;
-
-
+#highscore {
+    color: #000000;
+    display: none;
 }
 
-.snake{
-    border: #5a5a5a;
-    border: #999 solid 5px;
-
+.game-border-3, #logo {
+    background-color:#adc4ce ;
 }
-#logo{
-    position: absolute;
+
+/* --- Optimized Game Elements --- */
+
+/* 1. Realistic Food Sprite */
+.food {
+    background-color: transparent !important; /* Remove old background */
+    border: none !important; /* Remove old border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-image {
+    width: 20px; /* Adjust to match grid size */
+    height: 20px;
+    image-rendering: pixelated; /* Essential for crisp 8-bit sprites */
+}
+
+/* 2. Textured Snake Body */
+.snake {
+    /* Set a dark green body color */
+    background-color: #2D6A2D; 
     
+    /* Adds a slight scale texture */
+    background-image: 
+        linear-gradient(45deg, rgba(255,255,255,.05) 25%, transparent 25%), 
+        linear-gradient(-45deg, rgba(255,255,255,.05) 25%, transparent 25%);
+    background-size: 5px 5px;
+
+    border: solid #1D431D 2px; /* Dark green outline */
+    border-radius: 4px; /* Rounded corners for realism */
+    
+    box-shadow: inset 0px 0px 5px #000; /* Depth shadow */
 }
+
+/* 3. The Snake Head (Requires head.png and rotation logic) */
+.snake-head {
+    /* Option A: Textured Square Head (Keep it simple) */
+    background-color: #1D431D; /* Darker green head */
+    border: solid #0F230F 2px;
+    border-radius: 10px 10px 4px 4px; /* Round only the front */
+    box-shadow: 0px 0px 10px rgba(0,255,0,0.5); /* Slight glow */
+    
+    position: relative;
+    transition: transform 0.1s ease-out; /* Smoothly transitions rotation */
+}
+
+/* Optional: Add "eyes" to the textured head in CSS */
+.snake-head::before, .snake-head::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #000; /* Black eyes */
+    border-radius: 50%;
+    top: 5px;
+}
+.snake-head::before { left: 4px; }
+.snake-head::after { right: 4px; }
+
+
+/* 4. Head Rotation Logic (triggered by JS) */
+.snake-head.facing-up { transform: rotate(-90deg); }
+.snake-head.facing-down { transform: rotate(90deg); }
+.snake-head.facing-left { transform: rotate(180deg); }
+.snake-head.facing-right { transform: rotate(0deg); } /* Default */
+
+#logo {
+    position: absolute;
+}
+

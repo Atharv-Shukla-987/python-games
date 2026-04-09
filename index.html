@@ -11,25 +11,26 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <div id="colorsel">
+        <button class="btn" data-color="#00ff00" style="background:#2e4242;">DARK MODE</button>
+    </div>
     <div>
         <div class="scores">
-            <h1 id="score">000</h1>
-           <h1 id="highscore">000</h1>
-
-        <div class="game-border-1">
-             <div class="game-border-2">
-          <div class="game-border-3">
-            <div id="game-board"></div>
-          </div>
+            <h1 id="score">SCORE: <span id="score-value">000</span></h1>
+            <h1 id="text">HIGH SCORE: <span id="highscore">000</span></h1>
+        </div> <div class="game-border-1">
+            <div class="game-border-2">
+                <div class="game-border-3">
+                    <div id="game-board"></div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-                
-    </div>
-     <h1 id="instruction-text">press space bar to start the  game 
-    </h1>
+    
+    <h1 id="instruction-text">Press space bar to start the game</h1>
     <img id="logo" src="snake-game-ai-gen.png" alt="snake-logo" />
-     
-
+    <audio id="eat-sound" src="https://playsnake.org/assets/audio/high.mp3"></audio>
+    <audio id="death-sound" src="https://playsnake.org/assets/audio/die.mp3"></audio>
+    <audio id="bg-music" src="https://cdn.pixabay.com/audio/2025/05/01/audio_adf34e1888.mp3" loop></audio>
 </body>
 </html>
