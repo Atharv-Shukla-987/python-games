@@ -4,43 +4,43 @@ A classic arcade-style Snake game built with a clean, modern UI and realistic ga
 https://python-games-two.vercel.app/
 # ✨ Features
 
-    ## Realistic Prey System: Instead of generic blocks, the snake hunts for real prey like mice (🐭), frogs (🐸), and crickets (🦗).
+     Realistic Prey System: Instead of generic blocks, the snake hunts for real prey like mice (🐭), frogs (🐸), and crickets (🦗).
 
-   ## Immersive Audio: -   Background music that starts with the game.
+    Immersive Audio: -   Background music that starts with the game.
 
      Satisfying "crunch" sounds when eating.
 
         Unique death sound effect upon collision.
 
-  ##  Dynamic Difficulty: The game speed increases as you eat, challenging your reflexes as the snake grows longer.
+   Dynamic Difficulty: The game speed increases as you eat, challenging your reflexes as the snake grows longer.
 
-  ##  Head Rotation: The snake's head visually rotates to face the direction of movement (Up, Down, Left, Right).
+   Head Rotation: The snake's head visually rotates to face the direction of movement (Up, Down, Left, Right).
 
-   ## High Score Tracking: Your best performance is saved locally so you can always try to beat your record.
+    High Score Tracking: Your best performance is saved locally so you can always try to beat your record.
 
-  ##  Retro Design: A stylized game board with "glassmorphism" borders and a neon-inspired interface.
+   Retro Design: A stylized game board with "glassmorphism" borders and a neon-inspired interface.
 
 # 🎮 How to Play
 
-  ##  Start: Press the Spacebar to begin the game and start the music.
+    Start: Press the Spacebar to begin the game and start the music.
 
- ##  Move: Use the Arrow Keys (↑ ↓ ← →) to navigate the snake.
+   Move: Use the Arrow Keys (↑ ↓ ← →) to navigate the snake.
 
-  ##  Objective: Eat the food to grow and increase your score.
+   Objective: Eat the food to grow and increase your score.
 
-  ##  Avoid: Do not hit the walls or the snake's own body.
+    Avoid: Do not hit the walls or the snake's own body.
 
-   ## Restart: If you die, the game resets. Press Spacebar to try again!
+    Restart: If you die, the game resets. Press Spacebar to try again!
 
 # 🛠️ Tech Stack
 
-   ## HTML5: Structured the game board and UI elements.
+ HTML5: Structured the game board and UI elements.
 
-   ## CSS3: Custom styling, animations, and head rotation logic.
+CSS3: Custom styling, animations, and head rotation logic.
 
-  ##  Vanilla JavaScript: Core game engine, collision detection, and audio management.
+    Vanilla JavaScript: Core game engine, collision detection, and audio management.
 
- ##   Vercel: Deployment and hosting.
+   Vercel: Deployment and hosting.
 
 # 📁 Project Structure
 Plaintext
