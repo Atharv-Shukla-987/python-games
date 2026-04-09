@@ -43,7 +43,7 @@ CSS3: Custom styling, animations, and head rotation logic.
    Vercel: Deployment and hosting.
 
 # 📁 Project Structure
-Plaintext
+```
 
 snake-game/
 ├── index.html          # Main entry point (HTML)
@@ -58,7 +58,7 @@ snake-game/
 │       ├── eat.mp3
 │       └── death.mp3
 └── README.md           # Project documentation
-
+```
 # 🚀 Installation & Local Development
 
 To run this project locally:
