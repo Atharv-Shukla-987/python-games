@@ -3,27 +3,26 @@ A Simple Arcade game , which you may have already seen or played on old keypad m
 https://python-games-two.vercel.app/
 # ✨ Features
   it uses a realistic prey like mice (🐭), frogs (🐸), and crickets (🦗) instead of orbs like circle .
-    A background fun music which will keep u intracted ,  a crunch sound when it eats the prey
-    and a death effect
+  A background fun music which will keep u intracted ,  a crunch sound when it eats the prey
+   and a death effect
 
-    snake increases its speed , the more u eat the more ur snakes speed
+  snake increases its speed , the more u eat the more ur snakes speed
  # FACTS
  The snake's head visually rotates IN FACING DIRECTION
-  It also consist of a high score tracking which keeps track of  your high so you feel competitive and do not lose attention
+It also consist of a high score tracking which keeps track of  your high so you feel competitive and do not lose attention
 
    Retro Design: A stylized game board with "glassmorphism" borders and a neon-inspired interface.
 
 # 🎮 How to Play
 
-    Start: Press the Spacebar to begin the game and start the music.
+  Start: Press the Spacebar to begin the game and start the music.
 
-   Move: Use the Arrow Keys (↑ ↓ ← →) to navigate the snake.
+ Move: Use the Arrow Keys (↑ ↓ ← →) to navigate the snake.
 
-   Objective: Eat the food to grow and increase your score.
+ Objective: Eat the food to grow and increase your score.
 
-    Avoid: Do not hit the walls or the snake's own body.
-
-    Restart: If you die, the game resets. Press Spacebar to try again!
+ Avoid: Do not hit the walls or the snake's own body.
+ Restart: If you die, the game resets. Press Spacebar to try again!
 
 # 🛠️ Tech Stack
 
