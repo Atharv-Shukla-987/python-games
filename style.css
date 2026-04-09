@@ -76,7 +76,6 @@ body, .snake {
     color:  	#000000;
 }
 
-/* Fixed from #high-score to #highscore */
 #score, #highscore {
     font-size: 40px;
     font-weight: bolder;
@@ -92,9 +91,8 @@ body, .snake {
     background-color:#adc4ce ;
 }
 
-/* --- Optimized Game Elements --- */
 
-/* 1. Realistic Food Sprite */
+
 .food {
     background-color: transparent !important; /* Remove old background */
     border: none !important; /* Remove old border */
@@ -108,13 +106,12 @@ body, .snake {
     height: 20px;
     image-rendering: pixelated; /* Essential for crisp 8-bit sprites */
 }
-
-/* 2. Textured Snake Body */
+/* Snake body*/
 .snake {
     /* Set a dark green body color */
     background-color: #2D6A2D; 
     
-    /* Adds a slight scale texture */
+ 
     background-image: 
         linear-gradient(45deg, rgba(255,255,255,.05) 25%, transparent 25%), 
         linear-gradient(-45deg, rgba(255,255,255,.05) 25%, transparent 25%);
@@ -126,7 +123,7 @@ body, .snake {
     box-shadow: inset 0px 0px 5px #000; /* Depth shadow */
 }
 
-/* 3. The Snake Head (Requires head.png and rotation logic) */
+
 .snake-head {
     /* Option A: Textured Square Head (Keep it simple) */
     background-color: #1D431D; /* Darker green head */
@@ -138,7 +135,7 @@ body, .snake {
     transition: transform 0.1s ease-out; /* Smoothly transitions rotation */
 }
 
-/* Optional: Add "eyes" to the textured head in CSS */
+
 .snake-head::before, .snake-head::after {
     content: '';
     position: absolute;
@@ -151,8 +148,7 @@ body, .snake {
 .snake-head::before { left: 4px; }
 .snake-head::after { right: 4px; }
 
-
-/* 4. Head Rotation Logic (triggered by JS) */
+/* tiliting of head*/
 .snake-head.facing-up { transform: rotate(-90deg); }
 .snake-head.facing-down { transform: rotate(90deg); }
 .snake-head.facing-left { transform: rotate(180deg); }
