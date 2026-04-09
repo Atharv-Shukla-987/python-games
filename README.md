@@ -31,9 +31,9 @@ https://python-games-two.vercel.app/
 
 CSS3: Custom styling, animations, and head rotation logic.
 
-    Vanilla JavaScript: Core game engine, collision detection, and audio management.
+ Vanilla JavaScript: Core game engine, collision detection, and audio management.
 
-   Vercel: Deployment and hosting.
+ Vercel: Deployment and hosting.
 
 # 📁 Project Structure
 ```
